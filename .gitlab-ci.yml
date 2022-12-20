@@ -28,7 +28,7 @@ php-cs-fixer:
         - vendor/bin/php-cs-fixer fix -vv --dry-run --stop-on-violation
     needs: ["composer"]
 
-satis:
-    stage: deploy
-    script:
-        - cd /data/sites/dp-satis; php7.3 -dmemory_limit=2048M bin/satis build --repository-url git@gitlab.com:EspaceProprio/duproprio/php-project-skeleton.git satis.json public_html
+#satis:
+#    stage: deploy
+#    script:
+#        - cd /data/sites/dp-satis; php7.3 -dmemory_limit=2048M bin/satis build --repository-url git@gitlab.com:EspaceProprio/duproprio/php-project-skeleton.git satis.json public_html
