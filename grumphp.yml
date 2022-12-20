@@ -1,7 +1,7 @@
 grumphp:
     tasks:
         phpcsfixer:
-            config: .php-cs-fixer.php
+            config: .php-cs-fixer.dist.php
         phpstan:
             configuration: phpstan.neon.dist
             use_grumphp_paths: false
