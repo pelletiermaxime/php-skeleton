@@ -21,7 +21,7 @@
         "phpstan/phpstan": "^1.9.4",
         "phpstan/phpstan-mockery": "^1.1.0",
         "phpunit/phpunit": "^9.5.27",
-        "dpfs/php-cs-fixer-configs": "dev-init"
+        "dpfs/php-cs-fixer-configs": "^1.0.0"
     },
 
     "autoload": {
