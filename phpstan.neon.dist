@@ -1,0 +1,5 @@
+parameters:
+    tmpDir: /tmp/phpstan/skeleton
+    paths:
+        - src
+    level: 5

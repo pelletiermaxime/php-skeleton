@@ -1,0 +1,46 @@
+{
+    "name": "dp/skeleton",
+    "description": "Replace with your package description",
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.duproprio.com"
+        }
+    ],
+
+    "require": {
+        "php": "7.4.*|8.1.*"
+    },
+
+    "require-dev": {
+        "php-cs-fixer/shim": "^3.13.1",
+        "mockery/mockery": "^1.5.1",
+        "phpro/grumphp-shim": "^1.13",
+        "phpstan/extension-installer": "^1.2",
+        "phpstan/phpstan": "^1.9.4",
+        "phpstan/phpstan-mockery": "^1.1.0",
+        "phpunit/phpunit": "^9.5.27"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Dp\\Skeleton\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "phpro/grumphp-shim": true
+        }
+    },
+    "type": "project"
+}
