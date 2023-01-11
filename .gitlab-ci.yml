@@ -15,7 +15,13 @@ composer:
 tests:
     script:
         # Run unit tests with phpunit
-        - vendor/bin/phpunit --colors=never --coverage-text
+        - vendor/bin/phpunit --colors=never --coverage-text --coverage-cobertura=coverage.cobertura.xml --log-junit report.xml
+    artifacts:
+        reports:
+            coverage_report:
+                coverage_format: cobertura
+                path: coverage.cobertura.xml
+            junit: report.xml
     needs: ["composer"]
 
 phpstan:
