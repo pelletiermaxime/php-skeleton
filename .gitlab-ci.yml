@@ -29,6 +29,11 @@ phpstan:
         - vendor/bin/phpstan analyze --no-progress
     needs: ["composer"]
 
+phpcs:
+    script:
+        - vendor/bin/phpcs
+    needs: ["composer"]
+
 php-cs-fixer:
     script:
         - vendor/bin/php-cs-fixer fix -vv --dry-run --stop-on-violation
